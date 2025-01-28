@@ -17,7 +17,11 @@ export default function RootLayout({
     <html lang="ko">
       <body className="min-h-screen bg-gray-50 text-gray-900">
         <Header />
-        <main className="max-w-5xl mx-auto p-4">{children}</main>
+        {/*
+          max-w-5xl, mx-auto 등의 제한을 없애고
+          children을 그대로 렌더링
+        */}
+        {children}
       </body>
     </html>
   );
