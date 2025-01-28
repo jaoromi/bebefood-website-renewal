@@ -1,15 +1,15 @@
-import Image from "next/image";
-
 // app/page.tsx
+import MainSlider from "./components/MainSlider";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-8">
-      <h1 className="text-3xl font-bold text-blue-600">
-        Hello Next.js 15.1.6 with Tailwind!
-      </h1>
-      <p className="text-lg text-gray-700 mt-4">
-        Tailwind is working if this text is styled.
+    <section>
+      <MainSlider />
+      <h2 className="text-xl font-bold mt-4">메인 슬라이더 아래 내용(예시)</h2>
+      <p className="mt-2">
+        여기부터 제품 리뷰, 회사 소식, 제품 구매 영역을 이어서 추가할
+        예정입니다.
       </p>
-    </main>
+    </section>
   );
 }
